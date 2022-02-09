@@ -1,0 +1,173 @@
+:root {
+	--bg-silver: #75757f
+}
+
+.bg-silver {
+	background-color: var(--bg-silver);
+}
+
+.text-silver {
+	color: var(--bg-silver);
+}
+
+.btn-light:hover {
+	background-color: #ddddde;
+	border-color: #ddddde;
+}
+
+body {
+	color: white;
+	min-height: 100vh;
+	background: #000000;
+	/*background: linear-gradient(60deg, rgba(255, 0, 0, 0.7), rgba(0, 0, 255, 0.7));*/
+}
+
+section:not(:first-of-type) {
+	padding-top: 3rem;
+}
+
+section .header > span {
+	position: relative;
+}
+
+section .header > span::after {
+	top: 100%;
+	right: 50%;
+	transform: translateX(50%);
+	content: "";
+	width: 30%;
+	position: absolute;
+	border-bottom: 2px solid red;
+}
+
+nav.navbar {
+	/*border-bottom: .005rem solid var(--bg-silver);*/
+	/*box-shadow: 0 5px 6px rgba(0, 0, 0, 0.5);*/
+}
+
+.header {
+	font-size: 54px;
+	margin-bottom: 3rem;
+	font-family: "Cookie Regular", sans-serif;
+}
+
+.hero {
+	/*background: repeating-linear-gradient(60deg, black, darkblue);*/
+	/*background: repeating-linear-gradient(60deg, red, blue);*/
+	/*box-shadow: 0 6px 8px rgba(0, 0, 220, 0.4);*/
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	height: 100vh;
+	z-index: 200;
+}
+
+.hero-background {
+	/*background: url("../../img/try ~ 1.jpg") center;*/
+	filter: blur(0.2rem) brightness(40%) drop-shadow(0 5px 10px black);
+	/*left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 100;
+	background-size: cover;*/
+}
+
+.hero > .content-wrapper {
+	display: flex;
+	height: 100%;
+}
+
+.hero > .content-wrapper > .content {
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	flex-direction: column;
+}
+
+.hero > .content-wrapper > .content > .title {
+	font-size: 70px;
+	font-family: "Nunito Bold", sans-serif;
+}
+
+.hero > .content-wrapper > .content > .subtitle {
+	font-size: 30px;
+	font-family: "Dancing Script Regular", sans-serif;
+}
+
+.hero > .content-wrapper > .content > .btn {
+	border-radius: 30px;
+	color: rgb(55, 0, 255, 0.8);
+}
+
+body::-webkit-scrollbar {
+	width: 0.35rem !important;
+}
+
+body::-webkit-scrollbar-track {
+	background: #1c1a1a;
+}
+
+body::-webkit-scrollbar-thumb {
+	border-radius: 0.5rem;
+	background: var(--bg-silver);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+	background: var(--bs-gray-500);
+}
+
+body::-webkit-scrollbar-thumb:active {
+	background: #0a4ba8;
+}
+
+
+@media (max-width: 992px) {
+	* {
+		font-size: 12px;
+	}
+	
+	.header,
+	.header * {
+		font-size: 45px;
+	}
+	
+	.hero > .content-wrapper > .content > .title {
+		font-size: 45px;
+	}
+	
+	.hero > .content-wrapper > .content > .subtitle {
+		font-size: 25px;
+	}
+}
+
+
+/** Glass-morphism Example **/
+/*
+.hero-background::before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	!*filter: brightness(40%) drop-shadow(0 5px 10px black);*!
+	background: url("../../img/try.jpg") center;
+	background-size: cover;
+}
+
+.hero-background {
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	!*z-index: 100;*!
+}
+
+.hero-background::after {
+	content: "";
+	position: absolute;
+	height: 90%;
+	width: 100%;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	background: repeating-linear-gradient(60deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
+}*/
