@@ -126,7 +126,6 @@ body::-webkit-scrollbar-thumb:active {
 	/** {
 		font-size: 14px;
 	}*/
-	
 	.header,
 	.header * {
 		font-size: 45px;
@@ -141,6 +140,25 @@ body::-webkit-scrollbar-thumb:active {
 	}
 }
 
+
+#contact {
+	background: linear-gradient(45deg, red, blue)
+}
+
+#contact #contact-background {
+	left: 0;
+	top: 120px;
+	bottom: 0;
+	right: 0;
+	background: url("../../img/trans.png");
+	background-size: contain;
+}
+
+#contact .card {
+	background: repeating-linear-gradient(60deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
+	-webkit-backdrop-filter: blur(8px);
+	backdrop-filter: blur(8px);
+}
 
 /** Glass-morphism Example **/
 /*
