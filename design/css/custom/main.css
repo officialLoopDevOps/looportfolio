@@ -123,9 +123,9 @@ body::-webkit-scrollbar-thumb:active {
 
 
 @media (max-width: 992px) {
-	* {
-		font-size: 12px;
-	}
+	/** {
+		font-size: 14px;
+	}*/
 	
 	.header,
 	.header * {
