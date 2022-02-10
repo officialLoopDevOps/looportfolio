@@ -100,6 +100,10 @@ nav.navbar {
 	color: rgb(55, 0, 255, 0.8);
 }
 
+#contact .card-body > div:first-child {
+	border-right: 1px solid #dee2e6 !important;
+}
+
 body::-webkit-scrollbar {
 	width: 0.35rem !important;
 }
@@ -138,6 +142,19 @@ body::-webkit-scrollbar-thumb:active {
 	.hero > .content-wrapper > .content > .subtitle {
 		font-size: 25px;
 	}
+	
+	#contact {
+		padding-bottom: 15rem !important;
+	}
+	
+	#contact .card-body {
+		min-height: 60vh;
+	}
+	
+	#contact .card-body > div:first-child {
+		border-right: none !important;
+		/*border-bottom: 1px solid #dee2e6 !important;*/
+	}
 }
 
 
@@ -150,11 +167,12 @@ body::-webkit-scrollbar-thumb:active {
 	top: 120px;
 	bottom: 0;
 	right: 0;
-	background: url("../../img/trans.png");
+	background: url("../../img/trans.png") repeat-x;
 	background-size: contain;
 }
 
 #contact .card {
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, .6), -2px -2px 6px rgba(0, 0, 0, .6);
 	background: repeating-linear-gradient(60deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
 	-webkit-backdrop-filter: blur(8px);
 	backdrop-filter: blur(8px);
